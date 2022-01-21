@@ -59,7 +59,7 @@
             <!--
             A tag 'form' tem no mínimo três elementos/atributos: name, method e action;
             No method, podemos escolher entre GET e POST:
-            GET -> permite retirar os dados do formulário e disponibilizar na URL da página - Não é uma boa prática;
+            GET -> permite retirar os dados do formulário e disponibilizar na URL da página - Não é uma boa prática, pois fica visível as informações na URL;
             POST -> permite retirar os dados do formulário e disponibilizar em variáveis locais internas/invisíveis;
             action -> é usado para especificar em qual arquivo ou página será disponibilizado os dados do FORM;
         -->
