@@ -56,19 +56,6 @@
             <p>Nome:</p> 
             <input type="text" name="txtNome" size="50" maxlength="30">
 
-            <!--
-            A tag 'form' tem no mínimo três elementos/atributos: name, method e action;
-            No method, podemos escolher entre GET e POST:
-            GET -> permite retirar os dados do formulário e disponibilizar na URL da página - Não é uma boa prática, pois fica visível as informações na URL;
-            POST -> permite retirar os dados do formulário e disponibilizar em variáveis locais internas/invisíveis;
-            action -> é usado para especificar em qual arquivo ou página será disponibilizado os dados do FORM;
-        -->
-        <!--
-            input type "text" - permite colocar uma caixa de texto
-            size - especifica o tamanho da caixa
-            maxlength - permite configurar  qtde de Caracteres que será digitado na caixa
-        -->
-
             <p>Cidade:</p> 
             <select name="sltCidade">
                 <option value=""  selected>Selecione um item</option>
@@ -78,26 +65,12 @@
                 <option value="osasco">Osasco</option>
                 <option value="carapicuíba">Carapicuíba</option>
             </select>
-            <!--
-            <select> -> permite criar uma lista de opções;
-                <option> -> através dela podemos criar itens dentro da lista;
-                <option value=""> - a propriedade value é obrogatória para que o formulário consiga resgatar o valor do item
-                selecionado pelo usuário e disponibilizar para o back-end;
-                selected - ao abrir ou atualizar a página, deixa a option selecionada;
-        -->
-
+           
             <p>Sexo:</p>
             <input type="radio" name="rdoSexo" value="F" checked> Feminino
             <input type="radio" name="rdoSexo" value="M"> Masculino
             <input type="radio" name="rdoSexo" value="O"> Outro
-
-            <!--
-            radio - cria opções de escolha. 
-            Obs: para configurar o radio fazendo com que permita apenas uma 
-            opção de escolha, é obrigatório todas as inputs terem o mesmo nome.
-            checked - ao abrir ou atualizar a página, deixa a input selecionada
-        -->
-
+            
         <p>Idioma:</p>
         <input type="checkbox" name="chkPortugues" value="PT" checked> Português
         <input type="checkbox" name="chkIngles" value="EN"> Inglês
@@ -105,20 +78,10 @@
 
         <p>Observação:</p>
         <textarea name="txtObs" id="" cols="30" rows="5"></textarea>
-
-        <!--
-            textarea - tem sua própria tag e deve ser aberta e fechada na mesma linha, sem espaço para evitar bugs;
-            Para o usuário não poder redimensionar a textarea, fazemos esse código em CSS;
-        -->
-
+         
         <input type="submit" name="btnSalvar" value="Salvar">
         <input type="reset" name="btnLimpar" value="Limpar">
 
-        <!--
-            type="button" - apenas o JavaScript consegue retirar os dados;
-            type="submit" - retira os dados do formulário através do próprio HTML, fazendo um submit nos dados;
-            type="reset" - limpa o formulário;
-        -->
     </form>
 </body>
 </html>
