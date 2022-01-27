@@ -1,11 +1,4 @@
 <?php
-    //Todo o código em php deve estar entre a tag <?php
-    //Escreve um conteúdo na tela
-    //echo("Testando PHP");
-    //print_r("Testando outra forma de escrever");
-
-    //isset() - verifica a existência de uma variável ou de um objeto
-
     //Validação para identificar se o botão foi clicado e disponibilizado na ação do GET
     if(isset($_GET["btnSalvar"])) {
         //Recuperando dados via GET do formulário
